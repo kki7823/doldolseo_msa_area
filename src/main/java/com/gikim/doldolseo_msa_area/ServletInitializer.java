@@ -1,4 +1,4 @@
-package com.example.doldolseo_msa_area;
+package com.gikim.doldolseo_msa_area;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
