@@ -14,6 +14,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) {
+        System.setProperty("server.servlet.context-path", "/doldolseo1");
         SpringApplication.run(ServletInitializer.class, args);
     }
 }
