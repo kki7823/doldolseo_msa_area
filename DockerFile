@@ -13,6 +13,7 @@ RUN ./gradlew bootJar
 ENV JAR_FILE_PATH=./build/libs
 WORKDIR $JAR_FILE_PATH
 RUN pwd > temp.txt
-COPY $JAR_FILE_PATH/*.jar app.jar
+#COPY $JAR_FILE_PATH/*.jar app.jar
+RUN cp doldolseo_msa_area-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
